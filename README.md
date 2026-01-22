@@ -96,7 +96,7 @@ npm start
 
 ### ℹ️ Additional Information
 - dokumentasi api [docs](https://api.ferdev.my.id/docs)
-- grup komunitas [WhatsApp](https://api.ferdev.my.id/social/community)
+- grup komunitas [WhatsApp](https://api.ferdev.my.id/community)
 
 ---
 

@@ -1,0 +1,83 @@
+{
+  "users": {
+    "5671861402": {
+      "saldo": 0,
+      "exp": 340,
+      "level": 0,
+      "limit": 98,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 38,
+      "chatTotal": 38,
+      "lastseen": 1769078802251,
+      "lastReset": "2026-01-22"
+    }
+  },
+  "chats": {
+    "5671861402": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    }
+  },
+  "stats": {
+    "menu.js": {
+      "total": 8,
+      "success": 7,
+      "last": 1769070367220,
+      "lastSuccess": 1769070367220
+    },
+    "info-ping.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1769069323381,
+      "lastSuccess": 1769069323381
+    },
+    "downloader-douyin-tiktok.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1769068731372,
+      "lastSuccess": 1769068731372
+    },
+    "start.js": {
+      "total": 7,
+      "success": 7,
+      "last": 1769070811901,
+      "lastSuccess": 1769070811901
+    },
+    "ai-chatgpt.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1769070452944,
+      "lastSuccess": 1769070452944
+    },
+    "xp-limit.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1769070464275,
+      "lastSuccess": 1769070464275
+    },
+    "owner-exec.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1769070496110,
+      "lastSuccess": 1769070496110
+    },
+    "owner-getId.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1769078802251,
+      "lastSuccess": 1769078802251
+    }
+  },
+  "msgs": {},
+  "sticker": {}
+}

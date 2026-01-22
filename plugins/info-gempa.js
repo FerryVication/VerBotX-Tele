@@ -1,12 +1,30 @@
-import axios from "axios";
-var handler = async (m, { conn }) => {
+/*
+* Informasi Gempa From api.ferdev.my.id
+* Code by FeriPratama
+* Bukan eai 
+*/
+
+import fetch from "node-fetch";
+const handler = async (m, { conn }) => {
   try {
-    var response = await axios.get(
-      `https://api.betabotz.eu.org/api/search/gempa?apikey=${lann}`,
-    );
-    var dataGempa = response.data.result.result;
-    var caption = `Waktu : ${dataGempa.waktu}\nLintang : ${dataGempa.Lintang}\nBujur : ${dataGempa.Bujur}\nMagnitude : ${dataGempa.Magnitudo}\nKedalaman : ${dataGempa.Kedalaman}\nWilayah : ${dataGempa.Wilayah}`;
-    conn.sendFile(m.chat, dataGempa.image, "map.png", caption, m);
+    const request = await fetch(`${APIs.ferdev}/search/gempa?apikey=${ferr}`);
+    const response = await request.json();
+    if(response.success) {
+      const { title, waktu, lintang, bujur, magnitudo, kedalaman, wilayah, map } = response.data;
+     const caption = `
+🌍 *INFORMASI GEMPA*
+      
+⏰ Waktu        : ${waktu}
+📍 Lintang     : ${lintang}
+📐 Bujur       : ${bujur}
+💥 Magnitudo   : ${magnitudo}
+🕳️ Kedalaman   : ${kedalaman}
+🗺️ Wilayah     : ${wilayah}
+      `.trim();
+    conn.sendFile(m.chat, map, "map.png", caption, m);
+    } else {
+      throw "Tidak Ada data gempa"
+    }
   } catch (e) {
     console.log(e);
     conn.reply(m.chat, "Terjadi kesalahan saat mengambil data gempa", m);

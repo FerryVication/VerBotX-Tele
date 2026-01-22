@@ -48,7 +48,7 @@ export default {
     }
 
     // ===== MENU UTAMA =====
-    const menuImage = "https://CDN.ferdev.my.id/assets/elfar/IMG_5017.jpeg";
+    const menuImage = "https://cdn.ferdev.my.id/assets/elfar/elfar-1769095327825.jpeg";
     const categories = new Set();
     for (const plugin of Object.values(global.plugins)) {
       if (plugin?.tags) plugin.tags.forEach((t) => categories.add(t));

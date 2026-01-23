@@ -9,7 +9,7 @@ import fetch from "node-fetch";
 const handler = async (m, { conn, args, usedPrefix, command }) => {
   // ini misal user cuma ngirim command nya doang ngga menyertakan link nya
   if (!args[0]) {
-    throw `Penggunaan : ${usedPrefix}${command} < Tiktok Video URL > \n\n Contoh ${usedPrefix}${command} https://www.capcut.com/template-detail/7299286607478181121?template_id=7299286607478181121&share_token=80302b19-8026-4101-81df-2fd9a9cecb9c&enter_from=template_detail&region=ID&language=in&platform=copy_link&is_copy_link=1`;
+    throw `Penggunaan : ${usedPrefix}${command} < Tiktok Video URL > \n\n Contoh ${usedPrefix}${command} Link Video`;
   }
   try {
     await m.reply(wait);
@@ -23,7 +23,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
       let caption = `
         🎧 ${title}
         👀 Likes  : ${likes.toLocaleString()}
-        🔁 Author  : ${data.author.name.toLocaleString()}`;
+        🔁 Author  : ${response.data.author.name.toLocaleString()}`;
       await conn.sendMessage(
         m.chat,
         {

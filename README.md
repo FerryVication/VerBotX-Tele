@@ -53,7 +53,7 @@ npm -v
 
 ### 📥 Clone Repository
 ```bash
-git clone https://github.com/username/VerBotX-Tele
+git clone https://github.com/FerryVication/VerBotX-Tele
 cd VerBotX-Tele
 ```
 ### 📦 Install Dependencies

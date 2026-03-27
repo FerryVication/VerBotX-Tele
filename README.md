@@ -2,7 +2,7 @@
 
 # 🤖 VerBotX - Tele
 
-<img src="https://cdn.ferdev.my.id/assets/elfar/elfar-1769095327825.jpeg" alt="VerBotX - Tele" width="600"/>
+<img src="https://fcdn.my.id/i/elfar-1769095327825.jpeg" alt="VerBotX - Tele" width="600"/>
 
 </div>
 
